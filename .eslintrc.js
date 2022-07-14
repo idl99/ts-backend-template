@@ -23,7 +23,7 @@ module.exports = {
 			},
 		},
 		{
-			files: ['test/**'],
+			files: ['*.test.ts'],
 			plugins: ['jest'],
 			extends: ['plugin:jest/recommended'],
 		},

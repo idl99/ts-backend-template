@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "rm -rf dist && tsc && node dist/index.js",
 		"watch": "nodemon --watch src -e ts --exec \"npm run build\"",
-		"test": "tsc && jest",
+		"test": "rm -rf dist && tsc && jest",
 		"prepare": "husky install"
 	},
 	"lint-staged": {
