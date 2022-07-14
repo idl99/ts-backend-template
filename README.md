@@ -49,3 +49,5 @@ module.exports = {
     singleQuote: true,
   };
 ```
+
+## Pre-Commit hook using Husky and Link-staged
