@@ -51,3 +51,4 @@ module.exports = {
 ```
 
 ## Pre-Commit hook using Husky and Link-staged
+[Diving into Husky and Lint-staged](https://laurieontech.com/posts/husky/)
