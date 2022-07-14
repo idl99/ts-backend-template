@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "tsc && node dist/index.js",
+    "compile": "rm -rf dist && tsc && node dist/index.js",
     "dev": "nodemon --watch src -e ts --exec \"npm run compile\"",
     "test": "jest"
   },
