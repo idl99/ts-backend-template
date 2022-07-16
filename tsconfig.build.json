@@ -1,0 +1,8 @@
+// https://bobbyhadz.com/blog/typescript-exclude-test-files-from-compilation
+// Separate tsconfig to exclude tests from Typescript build, but still use type-checking
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "src/**/*.test.ts"
+  ]
+}

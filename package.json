@@ -4,10 +4,10 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"build": "rm -rf dist && tsc",
+		"build": "rm -rf dist && tsc --project tsconfig.build.json",
 		"start": "node dist/index.js",
 		"watch": "nodemon --watch src -e ts --exec \"ts-node src/index.ts\"",
-		"test": "rm -rf dist && tsc && jest",
+		"test": "jest",
 		"prepare": "husky install"
 	},
 	"lint-staged": {
