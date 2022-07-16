@@ -1,8 +1,14 @@
-import hello from '../';
+import request from 'supertest';
+import server from '../server';
 
-describe('Hello world', () => {
-	it('should return welcome message', () => {
-		const welcomeMessage = hello();
-		expect(welcomeMessage).toBe('Hello from Typescript');
+describe('Server', () => {
+	afterAll(() => {
+		server.close();
+	});
+
+	it('should run', async () => {
+		const response = await request(server).get('/health');
+
+		expect(response.status).toBe(200);
 	});
 });
